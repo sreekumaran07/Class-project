@@ -1,0 +1,10 @@
+
+// Display the ASCII values
+#include <stdio.h>
+
+int main() {
+    for (int i = 0; i <= 127; i++) {
+        printf("Char: %c ASCII: %d\n", i, i);
+    }
+    return 0;
+}
