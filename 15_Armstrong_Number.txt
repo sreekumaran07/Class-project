@@ -1,0 +1,18 @@
+// Check for Armstrong Number
+#include <stdio.h>
+
+int main() {
+    int n, temp, original, sum = 0, count = 0;
+    printf("Enter a number: "); scanf("%d", &n);
+    original = n; temp = n;
+    while(temp != 0) { count++; temp /= 10; }
+    temp = n;
+    while(temp != 0) {
+        int d = temp % 10, p = 1;
+        for(int i = 1; i <= count; i++) p *= d;
+        sum += p; temp /= 10;
+    }
+    if(sum == original) printf("Armstrong");
+    else printf("Not Armstrong");
+    return 0;
+}
