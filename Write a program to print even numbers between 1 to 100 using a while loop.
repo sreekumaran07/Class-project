@@ -1,0 +1,11 @@
+
+#include <stdio.h>
+int main() {
+Level 1 Questions 24
+ int i = 2;
+ while (i <= 100) {
+ printf("%d ", i);
+ i += 2;
+ }
+ return 0;
+}
