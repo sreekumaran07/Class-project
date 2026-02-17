@@ -1,0 +1,11 @@
+// Stop when 0 is entered
+#include <stdio.h>
+
+int main() {
+    int num;
+    do {
+        printf("Enter number (0 to stop): ");
+        scanf("%d", &num);
+    } while (num != 0);
+    return 0;
+}
