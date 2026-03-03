@@ -1,0 +1,41 @@
+PROGRAM 10: Floyd's Triangle
+
+Consecutive numbers are printed row by row, with each row i containing i numbers.
+
+Pattern Output (n = 4):
+1
+2 3
+4 5 6
+7 8 9 10
+
+#include<stdio.h>
+
+int main()
+{
+    int i, j, n, num = 1;
+
+    printf("Enter rows: ");
+    scanf("%d", &n);
+
+    for(i = 1; i <= n; i++)
+    {
+        for(j = 1; j <= i; j++)
+        {
+            printf("%d ", num++);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+
+/*
+Sample Input:
+Enter rows: 4
+
+Sample Output:
+1
+2 3
+4 5 6
+7 8 9 10
+*/

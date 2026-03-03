@@ -1,4 +1,3 @@
-
 // Sum of even and odd numbers separately
 #include <stdio.h>
 

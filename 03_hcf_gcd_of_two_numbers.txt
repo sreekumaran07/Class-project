@@ -1,0 +1,33 @@
+PROGRAM 3: HCF (GCD) of Two Numbers
+
+HCF (Highest Common Factor) / GCD (Greatest Common Divisor) is the largest number that divides both a and b.
+Uses the Euclidean Algorithm.
+
+#include<stdio.h>
+
+int main()
+{
+    int a, b, temp;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    while(b != 0)
+    {
+        temp = b;
+        b = a % b;
+        a = temp;
+    }
+
+    printf("HCF = %d", a);
+
+    return 0;
+}
+
+/*
+Sample Input:
+Enter two numbers: 12 18
+
+Sample Output:
+HCF = 6
+*/

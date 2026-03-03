@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    int n, i, evenCount = 0, oddCount = 0;
+    printf("Enter N: ");
+    scanf("%d", &n);
+    for(i = 1; i <= n; i++)
+    {
+        if(i % 2 == 0)
+            evenCount++;
+        else
+            oddCount++;
+    }
+    printf("Count of even numbers = %d\n", evenCount);
+    printf("Count of odd numbers = %d", oddCount);
+    return 0;
+}

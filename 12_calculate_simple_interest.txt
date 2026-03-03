@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+    float principal, rate, time, si;
+    printf("Enter Principal amount: ");
+    scanf("%f", &principal);
+    printf("Enter Rate of interest: ");
+    scanf("%f", &rate);
+    printf("Enter Time (in years): ");
+    scanf("%f", &time);
+    if(principal <= 0 || rate <= 0 || time <= 0)
+    {
+        printf("Invalid input! All values must be positive.");
+    }
+    else
+    {
+        si = (principal * rate * time) / 100;
+        printf("Simple Interest = %.2f", si);
+    }
+    return 0;
+}

@@ -1,0 +1,62 @@
+PROGRAM 9: Diamond Star Pattern
+
+Combines an upper pyramid and a lower inverted pyramid to form a diamond shape.
+
+Pattern Output (n = 4):
+   *
+  ***
+ *****
+*******
+ *****
+  ***
+   *
+
+#include<stdio.h>
+
+int main()
+{
+    int i, j, n;
+
+    printf("Enter height: ");
+    scanf("%d", &n);
+
+    // Upper pyramid
+    for(i = 1; i <= n; i++)
+    {
+        for(j = 1; j <= n-i; j++)
+            printf(" ");
+
+        for(j = 1; j <= 2*i-1; j++)
+            printf("*");
+
+        printf("\n");
+    }
+
+    // Lower pyramid
+    for(i = n-1; i >= 1; i--)
+    {
+        for(j = 1; j <= n-i; j++)
+            printf(" ");
+
+        for(j = 1; j <= 2*i-1; j++)
+            printf("*");
+
+        printf("\n");
+    }
+
+    return 0;
+}
+
+/*
+Sample Input:
+Enter height: 4
+
+Sample Output:
+   *
+  ***
+ *****
+*******
+ *****
+  ***
+   *
+*/

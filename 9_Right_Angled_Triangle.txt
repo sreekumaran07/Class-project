@@ -1,4 +1,3 @@
-
 // Right angled triangle pattern
 #include <stdio.h>
 

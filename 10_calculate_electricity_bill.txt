@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(void)
+{
+    int n;
+    printf("Enter no. of units consumed: ");
+    scanf("%d", &n);
+    if (n <= 100)
+        printf("Your bill is %d", n * 2);
+    else if (n <= 300)
+        printf("Your bill is %d", n * 3);
+    else
+        printf("Your bill is %d", n * 5);
+    return 0;
+}

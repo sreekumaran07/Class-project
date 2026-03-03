@@ -1,0 +1,35 @@
+PROGRAM 2: LCM of Two Numbers
+
+LCM (Least Common Multiple) is the smallest number that is divisible by both a and b.
+
+#include<stdio.h>
+
+int main()
+{
+    int a, b, max;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    max = (a > b) ? a : b;
+
+    while(1)
+    {
+        if(max % a == 0 && max % b == 0)
+        {
+            printf("LCM = %d", max);
+            break;
+        }
+        max++;
+    }
+
+    return 0;
+}
+
+/*
+Sample Input:
+Enter two numbers: 4 6
+
+Sample Output:
+LCM = 12
+*/

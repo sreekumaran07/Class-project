@@ -1,4 +1,3 @@
-
 // Display the ASCII values
 #include <stdio.h>
 
