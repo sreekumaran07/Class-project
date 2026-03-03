@@ -1,2 +1,1 @@
-# Class-project
-class project description
+# C-Programming
