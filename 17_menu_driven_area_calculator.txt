@@ -1,0 +1,36 @@
+#include <stdio.h>
+int main()
+{
+    int choice;
+    float radius, side, area;
+    do
+    {
+        printf("\n--- MENU ---\n");
+        printf("1. Area of Circle\n");
+        printf("2. Area of Square\n");
+        printf("3. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+        switch (choice)
+        {
+            case 1:
+                printf("Enter radius of the circle: ");
+                scanf("%f", &radius);
+                area = 3.14 * radius * radius;
+                printf("Area of Circle = %.2f\n", area);
+                break;
+            case 2:
+                printf("Enter side of the square: ");
+                scanf("%f", &side);
+                area = side * side;
+                printf("Area of Square = %.2f\n", area);
+                break;
+            case 3:
+                printf("Exiting program...\n");
+                break;
+            default:
+                printf("Invalid choice! Please select 1, 2, or 3.\n");
+        }
+    } while (choice != 3);
+    return 0;
+}

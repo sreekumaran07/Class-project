@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+    char signal;
+    printf("Enter traffic signal (R/Y/G): ");
+    scanf(" %c", &signal);
+    switch (signal)
+    {
+        case 'R': printf("Red Signal: STOP");            break;
+        case 'Y': printf("Yellow Signal: READY / SLOW DOWN"); break;
+        case 'G': printf("Green Signal: GO");            break;
+        default:  printf("Invalid traffic signal");
+    }
+    return 0;
+}
